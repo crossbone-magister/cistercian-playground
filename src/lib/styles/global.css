@@ -1,0 +1,40 @@
+.font-size-xxl {
+	font-size: xx-large;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.full-width-center-column-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.center-all {
+	justify-content: center;
+	align-items: center;
+}
+
+.min-height-100vh {
+	min-height: 100vh;
+}
+
+.gap-1em {
+	gap: 1em;
+}
+
+.column-gap-1em {
+	column-gap: 1em;
+}

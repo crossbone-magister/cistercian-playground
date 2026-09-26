@@ -2,6 +2,8 @@ import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
+const dev = process.argv.includes('dev');
+
 export default defineConfig({
 	plugins: [
 		sveltekit({
@@ -11,6 +13,9 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 			adapter: adapter(),
+			paths: {
+				base: dev ? '' : '/cistercian-playground'
+			},
 			prerender: {
 				handleMissingId: (details) => {
 					if (details.id.startsWith('digit-')) {

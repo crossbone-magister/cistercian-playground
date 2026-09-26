@@ -164,6 +164,7 @@
 	<div class="flex flex-row center-all gap-1em">
 		<div onclick={updateSelectedNumbers} onkeypress={() => {}} role="button" tabindex="0">
 			<svg
+				id="practice-matrix"
 				width={SVG_WIDTH}
 				height={SVG_HEIGHT}
 				stroke-width={STROKE_WIDTH}
@@ -223,3 +224,9 @@
 		{/if}
 	</div>
 </Modal>
+
+<style>
+	#practice-matrix > line:hover {
+		cursor: pointer;
+	}
+</style>

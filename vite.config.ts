@@ -13,6 +13,7 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 			adapter: adapter(),
+			appDir: 'app',
 			paths: {
 				base: dev ? '' : '/cistercian-playground'
 			},
